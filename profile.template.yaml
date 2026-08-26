@@ -1,0 +1,110 @@
+# Optional existing profile identifier assigned by Mirajobs
+ProfileID:
+
+# Desired role title
+Title: Senior Backend Engineer
+
+# Anonymous executive summary
+Summary: |
+  Senior backend engineer with experience building distributed systems,
+  APIs, and data-heavy services across startup and large-company environments.
+  Strong in system design, reliability, and developer productivity. Looking
+  for a role with meaningful product ownership, strong engineering standards,
+  and room to grow.
+
+# Key technical and professional skills
+Skills:
+  - Go
+  - TypeScript
+  - Node.js
+  - PostgreSQL
+  - Redis
+  - Kafka
+  - AWS
+  - Kubernetes
+  - System design
+  - API design
+
+# What you want in your next role
+Expectations: |
+  Looking for backend or platform-focused roles with strong engineering culture,
+  clear ownership, and practical product impact. Open to senior individual
+  contributor paths, remote-friendly teams, and environments that value
+  reliability, execution, and thoughtful technical decision-making.
+
+# Desired job category.
+# Use the exact backend label from job-categories.json.
+# Current supported values:
+# - general: General Software Development
+# - frontend: Front-End Development
+# - backend: Back-End / Server Programming
+# - fullstack: Full-stack Development
+# - mobile: Mobile Development
+# - telecom: Telecommunications Programming
+# - ai: AI/ML Development
+# - bigdata: BigData Development
+# - security: Cryptographic and Information Security Engineering
+# - blockchain: Blockchain / Web3 Programming
+# - embedded: Embedded & Robotics Programming
+# - arvr: AR / VR Development
+# - techlead: System Architect / Principal / Tech Lead
+# - devops: DevOps / SRE
+# - sysadmin: System Administration
+# - dbadmin: Database Administration
+# - netadmin: Network Administration
+# - data-science: Data Science & Research
+# - data-analytics: Data Analytics
+# - business-analysis: Business / Systems Analysis
+# - solutinos-architect: Solutions Architect
+# - enterprise-consulting: Integration Engineering & Consulting
+# - testing: Manual QA Testing
+# - sdet: Software Engineering in Test & QA Automation
+# - cto: CTO / Director of Engineering
+# - cio: CIO / IT Director
+# - cdo: CDO / Chief Digital Officer
+# - em: Software Development Management
+# - tpm: Technical Project / Program Management
+# - pm: Product Management
+# - scrum-master: Scrum Master / Agile Coaching
+# - tech-consulting: Technology Consulting & Pre-Sales
+# - bizdev: Business Development & Operations
+# - techwriting: Technical Writing
+# - techsupport: Tech Support
+# - csm: Customer Success & Account Management
+# - infosec: Information Security Specialist
+# - privacy: Data Privacy Specialist
+# - design: Web/UI/UX/Product Design
+JobCategory: backend
+
+# Seniority: junior, intermediate, senior
+ExpLevel: senior
+
+# Total professional years of experience
+ExpTotal: 8
+
+# Years of startup experience
+ExpStartup: 3
+
+# Years in top-tier companies
+ExpTop: 2
+
+# Years in large enterprises
+ExpEnterprise: 5
+
+# Highest degree: none, associate, bachelors, masters, doctoral
+Degree: bachelors
+
+# Security clearance: none, confidential, secret, topsecret
+Clearance: none
+
+# Role preferences
+Permanent: true
+Contract: true
+Office: false
+Remote: true
+Relocate: false
+
+# Compensation preferences. Use null if unknown or intentionally omitted.
+Salary: null
+TotalCompensation: null
+HourlyRate: null

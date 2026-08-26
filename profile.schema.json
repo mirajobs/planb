@@ -1,0 +1,166 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/mirajobs/planb/blob/main/profile.schema.json",
+  "title": "Mirajobs Plan B Public Profile",
+  "description": "Anonymous public jobseeker profile for Mirajobs-compatible Plan B onboarding.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "Title",
+    "Summary",
+    "Skills",
+    "Expectations",
+    "JobCategory",
+    "ExpLevel",
+    "ExpTotal",
+    "ExpStartup",
+    "ExpTop",
+    "ExpEnterprise",
+    "Degree",
+    "Clearance",
+    "Permanent",
+    "Contract",
+    "Office",
+    "Remote",
+    "Relocate"
+  ],
+  "properties": {
+    "ProfileID": {
+      "type": "string",
+      "description": "Optional existing Mirajobs profile identifier hash."
+    },
+    "Title": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 255,
+      "description": "Desired role title."
+    },
+    "Summary": {
+      "type": "string",
+      "minLength": 20,
+      "maxLength": 3000,
+      "description": "Anonymous executive summary without public PII."
+    },
+    "Skills": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 100,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 80
+      },
+      "description": "Key technical or professional skills."
+    },
+    "Expectations": {
+      "type": "string",
+      "minLength": 10,
+      "maxLength": 3000,
+      "description": "Desired role shape, environment, and next-step preferences."
+    },
+    "JobCategory": {
+      "type": "string",
+      "enum": [
+        "general",
+        "frontend",
+        "backend",
+        "fullstack",
+        "mobile",
+        "telecom",
+        "ai",
+        "bigdata",
+        "security",
+        "blockchain",
+        "embedded",
+        "arvr",
+        "techlead",
+        "devops",
+        "sysadmin",
+        "dbadmin",
+        "netadmin",
+        "data-science",
+        "data-analytics",
+        "business-analysis",
+        "solutinos-architect",
+        "enterprise-consulting",
+        "testing",
+        "sdet",
+        "cto",
+        "cio",
+        "cdo",
+        "em",
+        "tpm",
+        "pm",
+        "scrum-master",
+        "tech-consulting",
+        "bizdev",
+        "techwriting",
+        "techsupport",
+        "csm",
+        "infosec",
+        "privacy",
+        "design"
+      ],
+      "description": "Exact backend category label. See job-categories.json for human titles."
+    },
+    "ExpLevel": {
+      "type": "string",
+      "enum": ["junior", "intermediate", "senior"]
+    },
+    "ExpTotal": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 80
+    },
+    "ExpStartup": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 80
+    },
+    "ExpTop": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 80
+    },
+    "ExpEnterprise": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 80
+    },
+    "Degree": {
+      "type": "string",
+      "enum": ["none", "associate", "bachelors", "masters", "doctoral"]
+    },
+    "Clearance": {
+      "type": "string",
+      "enum": ["none", "confidential", "secret", "topsecret"]
+    },
+    "Permanent": {
+      "type": "boolean"
+    },
+    "Contract": {
+      "type": "boolean"
+    },
+    "Office": {
+      "type": "boolean"
+    },
+    "Remote": {
+      "type": "boolean"
+    },
+    "Relocate": {
+      "type": "boolean"
+    },
+    "Salary": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "TotalCompensation": {
+      "type": ["number", "null"],
+      "minimum": 0
+    },
+    "HourlyRate": {
+      "type": ["number", "null"],
+      "minimum": 0
+    }
+  }
+}

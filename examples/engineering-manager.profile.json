@@ -1,0 +1,33 @@
+{
+  "Title": "Engineering Manager",
+  "Summary": "Engineering manager with experience leading product and platform teams through execution, hiring, delivery planning, and cross-functional coordination. Strong in team health, engineering process, and helping senior engineers grow while maintaining delivery quality. Looking for a role with high-trust leadership, clear scope, and strong technical teams.",
+  "Skills": [
+    "Engineering management",
+    "Delivery planning",
+    "Cross-functional leadership",
+    "Hiring",
+    "Coaching",
+    "Performance management",
+    "Roadmap execution",
+    "Incident management",
+    "Stakeholder communication",
+    "Software architecture"
+  ],
+  "Expectations": "Looking for engineering management roles leading strong product or infrastructure teams. Prefers healthy team culture, practical execution, and organizations where managers are expected to support engineers rather than create unnecessary process overhead.",
+  "JobCategory": "em",
+  "ExpLevel": "senior",
+  "ExpTotal": 12,
+  "ExpStartup": 2,
+  "ExpTop": 3,
+  "ExpEnterprise": 7,
+  "Degree": "masters",
+  "Clearance": "none",
+  "Permanent": true,
+  "Contract": false,
+  "Office": false,
+  "Remote": true,
+  "Relocate": false,
+  "Salary": null,
+  "TotalCompensation": null,
+  "HourlyRate": null
+}
