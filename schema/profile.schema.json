@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/mirajobs/planb/blob/main/profile.schema.json",
+  "$id": "https://github.com/mirajobs/planb/blob/main/schema/profile.schema.json",
   "title": "Mirajobs Plan B Public Profile",
   "description": "Anonymous public jobseeker profile for Mirajobs-compatible Plan B onboarding.",
   "type": "object",
@@ -101,7 +101,7 @@
         "privacy",
         "design"
       ],
-      "description": "Exact backend category label. See job-categories.json for human titles."
+      "description": "Exact backend category label. See schema/job-categories.json for human titles."
     },
     "ExpLevel": {
       "type": "string",

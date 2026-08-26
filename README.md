@@ -88,9 +88,9 @@ You can repeat this flow for multiple tailored profiles, for example:
 See:
 - `AGENT.md`
 - `SUBMIT.md`
-- `profile.schema.json`
-- `profile.template.yaml`
-- `job-categories.json`
+- `schema/profile.schema.json`
+- `schema/profile.template.yaml`
+- `schema/job-categories.json`
 - `examples/`
 
 Supported local formats:

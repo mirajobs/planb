@@ -11,9 +11,9 @@ Prefer one of these formats:
 - `profiles/profile.json`
 
 Use:
-- [`profile.schema.json`](./profile.schema.json) for the canonical field shape
-- [`profile.template.yaml`](./profile.template.yaml) for the human-friendly template
-- [`job-categories.json`](./job-categories.json) for exact `JobCategory` labels
+- [`schema/profile.schema.json`](./schema/profile.schema.json) for the canonical field shape
+- [`schema/profile.template.yaml`](./schema/profile.template.yaml) for the human-friendly template
+- [`schema/job-categories.json`](./schema/job-categories.json) for exact `JobCategory` labels
 - [`examples/`](./examples/) for sample outputs
 
 JSON is the canonical machine payload.
@@ -121,7 +121,7 @@ Generate these fields:
   - what the candidate wants next
   - role shape, team quality, tech scope, growth, flexibility, or mission
 - `JobCategory`
-  - must use an exact backend label from [`job-categories.json`](./job-categories.json)
+  - must use an exact backend label from [`schema/job-categories.json`](./schema/job-categories.json)
   - example: `backend`, not `Back-End / Server Programming`
 - `ExpLevel`
   - one of: `junior`, `intermediate`, `senior`
@@ -160,7 +160,7 @@ Generate these fields:
 ## Normalization rules
 
 - Use lowercase enum values exactly as documented in the schema.
-- Use `JobCategory` labels exactly as documented in `job-categories.json`.
+- Use `JobCategory` labels exactly as documented in `schema/job-categories.json`.
 - Use numbers for experience and compensation fields, not strings.
 - Use booleans for preference fields, not `"yes"` or `"no"`.
 - If a numeric value is unknown, use `null`.
@@ -188,7 +188,7 @@ A good expectations section usually covers:
 Before producing the final profile:
 
 1. Check that there is no public PII.
-2. Check that `JobCategory` is one of the exact labels in `job-categories.json`.
+2. Check that `JobCategory` is one of the exact labels in `schema/job-categories.json`.
 3. Check that enum values match the schema exactly.
 4. Check that the text is useful to a recruiter without revealing identity.
 5. Check that no important claims were invented.

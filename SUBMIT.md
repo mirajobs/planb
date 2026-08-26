@@ -11,12 +11,9 @@ Do not put the private email inside the public profile payload.
 
 ## API base
 
-Choose the target environment first.
+Use:
 
-Examples:
-
-- production: `https://mirajobs.com/api/v1`
-- development: `<your dev base>/api/v1`
+- `https://mirajobs.com/api/v1`
 
 ## Client identification
 
@@ -122,9 +119,17 @@ Expected response shape includes:
 - `Created`
 - `Yaml`
 
+It may also include:
+
+- `SubmissionStatus`
+- `Visibility`
+- `StatusMessage`
+
+Treat the response `Yaml` as backend-generated draft output from the create step, not as proof that your full local profile content has already been saved.
+
 Use the returned `ProfileID` for the next step.
 
-## 4. Update the draft with the full public profile and submit it for review
+## 4. Update the draft with the full public profile
 
 Request:
 
@@ -140,7 +145,7 @@ JSON body:
 
 - full public profile object
 - include `ProfileID` in the body
-- use the exact field names and enum values from `profile.schema.json`
+- use the exact field names and enum values from `schema/profile.schema.json`
 
 Example:
 
@@ -177,7 +182,9 @@ Example:
 }
 ```
 
-This step applies the actual public profile content and submits the profile for moderator review.
+This step applies the actual public profile content.
+
+In the current backend flow, the profile may already show pending-review or pending-approval state immediately after the create step. Do not treat that as completion. The `PUT` step is still required to persist the full public profile payload.
 
 ## 5. Optional follow-up requests
 
@@ -197,7 +204,7 @@ When acting for a user:
 4. Verify the code and store tokens securely.
 5. Create the initial draft.
 6. Update the draft with the full public profile payload.
-7. Confirm that the profile was submitted for review.
+7. Confirm that the full profile content was saved and that the profile is pending moderator review.
 8. Return the created `ProfileID` and any returned YAML/template copy to the user.
 
 ## Current backend note
@@ -206,7 +213,13 @@ The current Mirajobs `/api/v1` profile flow is:
 
 1. authenticate
 2. `POST /user/profiles` to create a draft
-3. `PUT /user/profiles/<ProfileID>` to populate the draft fully and submit it for moderator review
+3. `PUT /user/profiles/<ProfileID>` to populate the draft fully
+
+Practical note:
+
+- the create response may already include `pending-review` or `pending-approval` metadata
+- response objects may use UI-oriented fields such as `Category` in addition to the schema field names used in the submitted payload
+- the `PUT` step is still the required step for saving the full public profile content
 
 If the backend is later refactored to support one-shot create from the full public profile object, this document should be simplified to match.
 

@@ -33,7 +33,7 @@ Expectations: |
   reliability, execution, and thoughtful technical decision-making.
 
 # Desired job category.
-# Use the exact backend label from job-categories.json.
+# Use the exact backend label from schema/job-categories.json.
 # Current supported values:
 # - general: General Software Development
 # - frontend: Front-End Development
