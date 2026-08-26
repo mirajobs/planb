@@ -19,6 +19,8 @@ This version is open and agent-based, and lets engineers create profiles locally
 
 Too often, engineers only start looking once their options have already narrowed.
 
+Put differently, this is about improving your [BATNA](https://en.wikipedia.org/wiki/Best_alternative_to_a_negotiated_agreement): your best alternative if your current job situation deteriorates.
+
 Staying ready takes effort. Interview skills get rusty, the market changes, and rebuilding momentum after a sudden job loss can be much harder than keeping your options open while you are still employed.
 
 You do not need to be actively interviewing all the time. But this has become the new normal: letting your options go completely cold for years can become very expensive very quickly.
