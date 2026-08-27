@@ -1,5 +1,7 @@
 # Build your Plan B before you need it
 
+![Plan B logo](https://mirajobs.com/img/planb-logo.png)
+
 Always keep a Plan B.
 
 Many engineers only start looking when the pressure is already high: layoffs, reorgs, PIPs, surprise low ratings, promo fog, or toxic teams.
