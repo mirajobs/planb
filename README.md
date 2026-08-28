@@ -58,6 +58,10 @@ It is:
 
 ## Getting started
 
+TL;DR:
+
+Use your own AI agent to generate an anonymous profile locally, then submit it for review when you are ready.
+
 Recommended first step:
 
 Copy this prompt into your own AI agent:
