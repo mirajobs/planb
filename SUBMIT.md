@@ -83,7 +83,40 @@ Recommended headers:
 - `Content-Type: application/json`
 - `X-Client-Id: agent`
 
-## 3. Create the initial draft
+## 3. Check location before profile submission if needed
+
+The authenticated user account already carries `CountryCode`, `RegionID`, and `CityID`, typically inferred from IP location.
+
+`CountryCode` uses the ISO 3166-1 alpha-2 two-letter format, for example: `US`, `CA`, `GB`.
+
+Before creating or updating a profile:
+
+- call `GET /user/location`
+- show the resolved location to the user only if it looks wrong or if the user wants a different location
+- correct it before profile submission only when needed
+
+Use these endpoints to resolve valid IDs:
+
+- `GET /user/locations/regions?CountryCode=<CountryCode>&query=<region-prefix>`
+- `GET /user/locations/cities?RegionID=<RegionID>&query=<city-prefix>`
+
+Then update the account location:
+
+- `PUT /user/location`
+
+Example:
+
+```json
+{
+  "CountryCode": "CA",
+  "RegionID": 452,
+  "CityID": 9302
+}
+```
+
+Do not guess `RegionID` or `CityID`. Resolve them through the location endpoints only when a correction is needed.
+
+## 4. Create the initial draft
 
 Request:
 
@@ -129,7 +162,7 @@ Treat the response `Yaml` as backend-generated draft output from the create step
 
 Use the returned `ProfileID` for the next step.
 
-## 4. Update the draft with the full public profile
+## 5. Update the draft with the full public profile
 
 Request:
 
@@ -186,7 +219,7 @@ This step applies the actual public profile content.
 
 In the current backend flow, the profile may already show pending-review or pending-approval state immediately after the create step. Do not treat that as completion. The `PUT` step is still required to persist the full public profile payload.
 
-## 5. Optional follow-up requests
+## 6. Optional follow-up requests
 
 Useful authenticated endpoints:
 
@@ -202,18 +235,20 @@ When acting for a user:
 2. Start email login.
 3. Ask the user for the one-time code from email.
 4. Verify the code and store tokens securely.
-5. Create the initial draft.
-6. Update the draft with the full public profile payload.
-7. Confirm that the full profile content was saved and that the profile is pending moderator review.
-8. Return the created `ProfileID` and any returned YAML/template copy to the user.
+5. Check `GET /user/location` and only correct it before submission if the detected location looks wrong or the user wants a different one.
+6. Create the initial draft.
+7. Update the draft with the full public profile payload.
+8. Confirm that the full profile content was saved and that the profile is pending review.
+9. Return the created `ProfileID` and any returned YAML/template copy to the user.
 
 ## Current backend note
 
 The current Mirajobs `/api/v1` profile flow is:
 
 1. authenticate
-2. `POST /user/profiles` to create a draft
-3. `PUT /user/profiles/<ProfileID>` to populate the draft fully
+2. optionally check and correct `/user/location`
+3. `POST /user/profiles` to create a draft
+4. `PUT /user/profiles/<ProfileID>` to populate the draft fully
 
 Practical note:
 
