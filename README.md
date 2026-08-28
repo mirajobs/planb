@@ -14,8 +14,21 @@ The idea is simple: build a database of anonymous professional profiles that rec
 
 How it works: use your own AI agent with the open instructions in this repo, generate your profile locally, and submit it for review when you are ready. Once it is live, recruiters can reach out to you by email with job proposals, without seeing your identity.
 
+This workflow only became practical recently, with agentic AI now widely available: your own agent can turn your resume or background into a structured anonymous profile locally, before anything is submitted.
+
 This repo is the public entry point for an idea I started building in 2018, originally as Mirajobs.
 This version is open and agent-based, and lets engineers create profiles locally before publishing them.
+
+## Built on an existing network
+
+Plan B is new. The network behind it is not.
+
+As of August 2026, Mirajobs has been operating for years and currently includes:
+- 30,000+ approved jobseeker profiles
+- [2,700+ registered recruiters globally](https://mirajobs.com/recruiters)
+- [600+ registered employers](https://mirajobs.com/employers)
+
+Plan B is an open-source, agent-first way to create an anonymous profile for that network, locally and on your own terms.
 
 ## Why this exists
 
@@ -132,7 +145,7 @@ Feedback is welcome.
 
 ## Powered by Mirajobs
 
-The publishing and recruiter workflow behind this project is powered by [Mirajobs](https://mirajobs.com), infrastructure I started building in 2018.
+[Mirajobs](https://mirajobs.com) provides the existing network behind this project: profile review, publishing, recruiter and employer access, and the private email contact flow.
 
 ## Support
 
