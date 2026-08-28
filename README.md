@@ -19,17 +19,6 @@ This workflow only became practical recently, with agentic AI now widely availab
 This repo is the public entry point for an idea I started building in 2018, originally as Mirajobs.
 This version is open and agent-based, and lets engineers create profiles locally before publishing them.
 
-## Built on an existing network
-
-Plan B is new. The network behind it is not.
-
-As of August 2026, Mirajobs has been operating for years and currently includes:
-- 30,000+ approved jobseeker profiles
-- [2,700+ registered recruiters globally](https://mirajobs.com/recruiters)
-- [600+ registered employers](https://mirajobs.com/employers)
-
-Plan B is an open-source, agent-first way to create an anonymous profile for that network, locally and on your own terms.
-
 ## Why this exists
 
 Too often, engineers only start looking once their options have already narrowed.
@@ -128,12 +117,26 @@ Using your own AI agent means:
 
 ## Why this is different from LinkedIn
 
-LinkedIn starts with your public identity.
+LinkedIn starts with your public identity and your public professional graph.
 
-This project starts with private options.
+Features like `#opentowork` may offer some visibility controls, but they still sit on top of a public social network first.
 
-The point is not to announce that you are looking.
-The point is to create options before you are desperate.
+In practice, that means you can never be fully sure that teammates, HR, or your manager will not see signals that you are open to leaving.
+
+That means you are still depending on a platform that was not designed around anonymous job search.
+
+This project starts from the opposite direction: anonymous profile first, identity revealed only if you decide to proceed.
+
+The point is not to announce that you are looking. The point is to create options before you are desperate.
+
+## Built on an existing network
+
+Plan B is new. The network behind it is not.
+
+As of August 2026, Mirajobs has been operating for years and currently includes:
+- 30,000+ approved jobseeker profiles
+- [2,700+ registered recruiters globally](https://mirajobs.com/recruiters)
+- [600+ registered employers](https://mirajobs.com/employers)
 
 ## Current status
 
