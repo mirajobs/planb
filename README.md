@@ -12,7 +12,7 @@ The mission is bigger than one tool: make the tech job market a little less one-
 
 The idea is simple: build a database of anonymous professional profiles that recruiters and employers can reach with job proposals, while each engineer keeps control of their identity until they choose to reveal it.
 
-How it works: use your own AI agent with the open instructions in this repo, generate your profile locally, and submit it for review only when you are ready.
+How it works: use your own AI agent with the open instructions in this repo, generate your profile locally, and submit it for review when you are ready. Once it is live, recruiters can reach out to you by email with job proposals, without seeing your identity.
 
 This repo is the public entry point for an idea I started building in 2018, originally as Mirajobs.
 This version is open and agent-based, and lets engineers create profiles locally before publishing them.
@@ -50,8 +50,8 @@ It is not:
 - a generic recruiter funnel
 
 It is:
-- a public professional summary without any identifying details
-- a private owner contact channel
+- an anonymous public profile
+- a private email channel for recruiter proposals
 - a candidate-first way to stay reachable for better opportunities
 
 ## Getting started
