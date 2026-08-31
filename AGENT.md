@@ -97,6 +97,7 @@ When in doubt, generalize instead of exposing.
 - Write in clear professional English.
 - Be concrete, not fluffy.
 - Prefer short factual sentences over self-promotion.
+- Prefer a single clean paragraph for `Summary` and `Expectations`; do not preserve source-material line wrapping or hard line breaks.
 - Do not write like a recruiter, marketer, or brand guide.
 - Keep the profile useful for search and screening.
 - Do not invent experience, credentials, or preferences that are not supported by the source material.
@@ -163,6 +164,7 @@ Generate these fields:
 - Use `JobCategory` labels exactly as documented in `schema/job-categories.json`.
 - Use numbers for experience and compensation fields, not strings.
 - Use booleans for preference fields, not `"yes"` or `"no"`.
+- When the source material clearly indicates startup, enterprise, or top-tier company experience, map that into `ExpStartup`, `ExpEnterprise`, and `ExpTop` instead of leaving those fields blank.
 - If a numeric value is unknown, use `null`.
 - If a boolean preference is unknown, make a reasonable best-effort inference or set it conservatively to `false`.
 
