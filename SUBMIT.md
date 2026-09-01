@@ -51,6 +51,9 @@ Recommended headers:
 
 - `Content-Type: application/json`
 - `X-Client-Id: agent`
+- optional but recommended for better server logs:
+  - `User-Agent: planb-agent/1.0`
+  - `X-Client-Version: <planb-commit-sha>`
 
 ## 2. Verify the one-time code
 
