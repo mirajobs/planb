@@ -126,6 +126,8 @@ Generate these fields:
   - example: `backend`, not `Back-End / Server Programming`
 - `ExpLevel`
   - one of: `junior`, `intermediate`, `senior`
+  - this is the overall seniority of the target profile, not a per-skill rating
+  - choose the level that best matches the role this specific profile is aiming for
 - `ExpTotal`
   - total professional years of experience
 - `ExpStartup`
