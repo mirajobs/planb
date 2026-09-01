@@ -138,7 +138,7 @@ The point is not to announce that you are looking. The point is to create option
 Plan B is new. The network behind it is not.
 
 As of August 2026, Mirajobs has been operating for years and currently includes:
-- 30,000+ approved jobseeker profiles
+- [30,000+ approved jobseeker profiles](https://mirajobs.com/search)
 - [2,700+ registered recruiters globally](https://mirajobs.com/recruiters)
 - [600+ registered employers](https://mirajobs.com/employers)
 
